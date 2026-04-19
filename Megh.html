@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>For Meghana 💖</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display&family=Poppins&display=swap" rel="stylesheet">
+
+<style>
+body{
+    margin:0;
+    font-family:'Poppins',sans-serif;
+    background:black;
+}
+
+/* SECTION */
+section{
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:30px;
+
+    opacity:0;
+    transform:translateY(40px);
+    transition:1s;
+}
+section.active{
+    opacity:1;
+    transform:translateY(0);
+}
+
+/* ⭐ PREMIUM STARS */
+.star{
+    position:absolute;
+    top:-10px;
+    font-size:14px;
+    color:#fff;
+    text-shadow:0 0 8px white;
+    animation:fallStar linear infinite;
+}
+@keyframes fallStar{
+    0%{transform:translateY(0);opacity:1;}
+    100%{transform:translateY(100vh);opacity:0;}
+}
+
+/* PAGE 1 */
+.page1{
+    background:
+    linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
+    url('https://images.unsplash.com/photo-1490750967868-88aa4486c946') center/cover;
+    filter:hue-rotate(60deg) saturate(1.4);
+    color:white;
+}
+.page1 h1{
+    font-family:'Great Vibes';
+    font-size:52px;
+}
+
+/* PAGE 2 */
+.page2{
+    background:#fff0f5;
+}
+.page2 img{
+    width:280px;
+    border-radius:20px;
+    box-shadow:0 15px 40px rgba(0,0,0,0.3);
+}
+
+/* PAGE 3 */
+.page3{
+    background:#f0f8ff;
+    position:relative;
+}
+.heart{
+    position:absolute;
+    bottom:0;
+    font-size:22px;
+    animation:floatUp 6s ease-in infinite;
+}
+@keyframes floatUp{
+    0%{transform:translateY(0);opacity:0.9;}
+    100%{transform:translateY(-420px);opacity:0;}
+}
+
+/* PAGE 4 */
+.page4{
+    background:#f5e6d3;
+    position:relative;
+}
+.envelope{
+    background:#c19a6b;
+    padding:18px 25px;
+    cursor:pointer;
+    border-radius:8px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.2);
+}
+
+/* LETTER */
+.letter{
+    display:none;
+    background:#fff8dc;
+    padding:25px;
+    margin-top:20px;
+    border:2px solid #8b5a2b;
+    max-width:600px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.25);
+}
+
+/* ❤️ HEART BEAT */
+.heartBeat{
+    display:inline-block;
+}
+.beat{
+    transform:scale(1.25);
+    transition:0.2s;
+}
+
+/* PAGE 5 */
+.page5{
+    background:black;
+    color:white;
+    font-family:'Great Vibes';
+    font-size:42px;
+}
+</style>
+</head>
+
+<body onclick="startMusic()">
+
+<audio id="music" loop>
+<source src="music.mp3">
+</audio>
+
+<!-- PAGE 1 -->
+<section class="page1">
+<h1>🌸 Welcome Meghana ❤️🌸</h1>
+
+<div class="star" style="left:10%;animation-duration:5s;">✨</div>
+<div class="star" style="left:30%;animation-duration:6s;">✨</div>
+<div class="star" style="left:50%;animation-duration:7s;">✨</div>
+<div class="star" style="left:70%;animation-duration:6s;">✨</div>
+</section>
+
+<!-- PAGE 2 -->
+<section class="page2">
+<h1>💐 A Bouquet for You ❤️ 💐</h1>
+
+<img src="https://images.unsplash.com/photo-1519378058457-4c29a0a2efac">
+
+<p>Welcoming you with love, warmth, and happiness ❤️</p>
+</section>
+
+<!-- PAGE 3 -->
+<section class="page3">
+<h2>📸 Our Memory ❤️</h2>
+
+<img src="meghana.jpg" width="260" style="border-radius:15px;">
+
+<!-- ❤️ BALANCED HEARTS -->
+<div class="heart" style="left:20%">❤️</div>
+<div class="heart" style="left:30%;animation-delay:1s;">❤️</div>
+<div class="heart" style="left:40%;animation-delay:2s;">❤️</div>
+<div class="heart" style="left:50%;animation-delay:3s;">❤️</div>
+<div class="heart" style="left:60%;animation-delay:1.5s;">❤️</div>
+<div class="heart" style="left:70%;animation-delay:2.5s;">❤️</div>
+</section>
+
+<!-- PAGE 4 -->
+<section class="page4">
+
+<!-- ⭐ STARS ADDED HERE -->
+<div class="star" style="left:15%;animation-duration:6s;">✨</div>
+<div class="star" style="left:35%;animation-duration:7s;">✨</div>
+<div class="star" style="left:55%;animation-duration:5s;">✨</div>
+<div class="star" style="left:75%;animation-duration:6.5s;">✨</div>
+
+<div class="envelope" onclick="openLetter()">💌 Open Letter ❤️</div>
+
+<div class="letter" id="letter">
+
+<div style="display:flex; justify-content:center; gap:10px; font-size:70px;">
+<span class="heartBeat">❤️</span>
+<span class="heartBeat">❤️</span>
+</div>
+
+<p>
+Dear Meghana ❤️  
+Being your twin brother is something I will always cherish. We didn’t just grow up together — we lived every moment side by side. You understand me without words, and that connection is rare. No matter where life takes us, one thing will never change — I will always stand with you. You are my strength, my comfort, and a part of me that can never be replaced. ❤️
+</p>
+
+</div>
+</section>
+
+<!-- PAGE 5 -->
+<section class="page5">
+With Love ❤️  
+<br> MANOJ KUMAR ❤️
+</section>
+
+<script>
+function startMusic(){
+    document.getElementById("music").play();
+}
+
+function openLetter(){
+    document.getElementById("letter").style.display="block";
+}
+
+/* HEART BEAT */
+setInterval(()=>{
+    document.querySelectorAll('.heartBeat').forEach(h=>{
+        h.classList.add('beat');
+        setTimeout(()=>h.classList.remove('beat'),200);
+    });
+},800);
+
+/* SCROLL */
+const sections=document.querySelectorAll("section");
+const observer=new IntersectionObserver((entries)=>{
+    entries.forEach(entry=>{
+        if(entry.isIntersecting){
+            entry.target.classList.add("active");
+        }
+    });
+},{threshold:0.5});
+sections.forEach(sec=>observer.observe(sec));
+</script>
+
+</body>
+</html>
